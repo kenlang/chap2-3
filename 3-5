@@ -1,0 +1,21 @@
+#include <iostream>
+const int factor = 60;
+const int factor_1 = 24;
+int main(){
+    using namespace std;
+        long long po_w, po_u;
+        double percentage;
+
+        cout << "enter world population: ";
+        cin >> po_w;
+        cout << "us popullation: ";
+        cin >> po_u;
+        percentage = double(po_u)/double(po_w) * 100;
+
+        cout << percentage;
+
+
+
+
+
+        return 0;
