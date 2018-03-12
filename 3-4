@@ -1,0 +1,29 @@
+#include <iostream>
+const int factor = 60;
+const int factor_1 = 24;
+int main(){
+    using namespace std;
+        long long sec, sec_s, minu_s, hours_s, days_s;
+
+        cout << "enter in seconds: ";
+        cin >> sec;
+        sec_s = sec % factor;
+        minu_s = (sec/factor) % factor;
+        hours_s =(sec/factor/factor) % factor;
+        days_s = (sec/factor/factor/factor_1);
+
+        cout << sec << " sec is equal to:\n";
+
+        cout <<days_s << "days, " << hours_s << "hours, " << minu_s << "minus, " << sec_s << "sec.";
+
+
+
+
+
+        return 0;
+
+
+
+
+
+}
