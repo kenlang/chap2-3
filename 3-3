@@ -1,0 +1,23 @@
+#include <iostream>
+const int stm = 60;
+const int mtd = 60;
+int main(){
+    using namespace std;
+
+    int degree, minu, secn;
+
+    cout << "Enter a latitude in degrees, minutes, and seconds:\n First, enter the degrees: ";
+    cin >> degree;
+    cout << "next, enter the minutes: ";
+    cin >> minu;
+    cout << "finally, eneter the seconds: ";
+    cin >> secn;
+
+    double x = double(degree) + ((double(minu)+ (double(secn)/stm))/mtd) ;
+
+    cout << x;
+
+    return 0;
+
+}
+
