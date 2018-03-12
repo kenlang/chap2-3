@@ -1,0 +1,28 @@
+#include <iostream>
+#include <climits>
+const int Factor_h = 12;
+const double Factor_w= 2.2;
+const double Factor_m=0.0254;
+int main(){
+    using namespace std;
+
+    int feet, inches,pounds;
+    cout << "Enter your height in feet: ";
+    cin >> feet;
+    cout << "Enter your height in inches: ";
+    cin >> inches;
+    cout << "enter you weight in pounds: ";
+    cin >> pounds;
+
+    //cauculate BMI
+
+    double height_m = Factor_m * (Factor_h*feet + inches);
+    double weight_k = pounds/Factor_w;
+    double BMI = weight_k / (height_m*height_m);
+
+    cout << BMI;
+
+
+   return 0;
+
+}
